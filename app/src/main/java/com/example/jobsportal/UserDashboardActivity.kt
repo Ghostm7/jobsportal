@@ -15,6 +15,7 @@ class UserDashboardActivity : AppCompatActivity() {
         val notificationsButton = findViewById<Button>(R.id.notificationsButton)
         val profileButton = findViewById<Button>(R.id.profileButton)
         val logoutButton = findViewById<Button>(R.id.logoutButton)
+        val goBackButton = findViewById<Button>(R.id.goBackButton) // Added go back button
 
         // Set click listeners to navigate to different activities
         searchJobsButton.setOnClickListener {
@@ -35,7 +36,15 @@ class UserDashboardActivity : AppCompatActivity() {
             startActivity(Intent(this, UserLoginActivity::class.java))
             finish() // Close the current activity
         }
+
+        // Go Back Button
+        goBackButton.setOnClickListener {
+            // Navigate back to the HomeActivity (MainActivity)
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
     }
 }
+
 
 

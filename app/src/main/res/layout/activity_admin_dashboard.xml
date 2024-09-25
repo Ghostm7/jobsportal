@@ -3,13 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center">
 
+    <!-- Admin Icon -->
+    <ImageView
+        android:id="@+id/adminIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/isticon"
+    android:layout_gravity="center"
+    android:contentDescription="Admin Icon"
+    android:layout_marginBottom="10dp"
+    android:scaleType="fitCenter" />
+
+    <!-- Admin Text -->
     <TextView
+        android:id="@+id/adminText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Admin Dashboard"
+        android:text="Admin"
         android:textSize="24sp"
+        android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp" />
 
@@ -50,8 +66,10 @@
         android:id="@+id/goBackButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go Back to Home" />
+        android:text="Go Back " />
 
 </LinearLayout>
+
+
 
 
