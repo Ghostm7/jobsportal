@@ -11,39 +11,40 @@
         android:layout_height="wrap_content"
         android:hint="Name"
         android:padding="12dp"
-        android:minHeight="56dp"
-    android:background="@drawable/edit_text_background"
-    android:drawablePadding="8dp" />
+    android:layout_marginBottom="16dp"
+    android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/emailField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:inputType="textEmailAddress"
         android:padding="12dp"
-        android:minHeight="56dp"
-    android:background="@drawable/edit_text_background"
-    android:drawablePadding="8dp" />
+    android:layout_marginBottom="16dp"
+    android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="New Password"
+        android:hint="Password"
         android:inputType="textPassword"
         android:padding="12dp"
-        android:minHeight="56dp"
-    android:background="@drawable/edit_text_background"
-    android:drawablePadding="8dp" />
+    android:layout_marginBottom="16dp"
+    android:minHeight="48dp" />
 
     <Button
         android:id="@+id/updateButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update Profile"
-        android:padding="16dp"
-    android:minHeight="56dp" />
+        android:text="Update Profile" />
 
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
 </LinearLayout>
+
+
 

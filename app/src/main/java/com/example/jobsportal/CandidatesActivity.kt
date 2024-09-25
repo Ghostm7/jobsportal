@@ -1,8 +1,9 @@
 package com.example.jobsportal
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.EditText
+import android.widget.Button
 import android.widget.ListView
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +42,14 @@ class CandidatesActivity : AppCompatActivity() {
                 return true
             }
         })
+
+        // Go Back Button
+        val goBackButton = findViewById<Button>(R.id.goBackButton)
+        goBackButton.setOnClickListener {
+            // Navigate back to the AdminDashboardActivity
+            startActivity(Intent(this, AdminDashboardActivity::class.java))
+            finish()
+        }
     }
 
     private fun fetchCandidates() {
@@ -61,3 +70,5 @@ class CandidatesActivity : AppCompatActivity() {
             }
     }
 }
+
+

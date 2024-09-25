@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Job Info -->
+    <EditText
+        android:id="@+id/jobInfoField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Job Info"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Job Start Date -->
+    <EditText
+        android:id="@+id/jobStartDateField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Job Start Date"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Job Category -->
+    <EditText
+        android:id="@+id/jobCategoryField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Job Category"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Number of Vacancies -->
+    <EditText
+        android:id="@+id/numOfVacanciesField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Vacancies"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Company Name -->
+    <EditText
+        android:id="@+id/companyField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Post Job Button -->
+    <Button
+        android:id="@+id/postJobButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Job"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
+</LinearLayout>
+

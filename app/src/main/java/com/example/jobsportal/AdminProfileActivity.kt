@@ -1,5 +1,6 @@
 package com.example.jobsportal
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -36,6 +37,14 @@ class AdminProfileActivity : AppCompatActivity() {
             val password = passwordField.text.toString()
 
             updateProfile(name, email, password)
+        }
+
+        // Go Back Button
+        val goBackButton = findViewById<Button>(R.id.goBackButton)
+        goBackButton.setOnClickListener {
+            // Navigate back to the AdminDashboardActivity
+            startActivity(Intent(this, AdminDashboardActivity::class.java))
+            finish()
         }
     }
 
@@ -92,3 +101,4 @@ class AdminProfileActivity : AppCompatActivity() {
         }
     }
 }
+
