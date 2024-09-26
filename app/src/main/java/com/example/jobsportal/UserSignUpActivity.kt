@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -28,6 +29,13 @@ class UserSignUpActivity : AppCompatActivity() {
             val name = findViewById<EditText>(R.id.nameField).text.toString()
 
             signUpUser(email, password, name)
+        }
+
+        // Set up the login link
+        val loginLink = findViewById<TextView>(R.id.loginLink)
+        loginLink.setOnClickListener {
+            // Navigate to User Login Activity
+            startActivity(Intent(this, UserLoginActivity::class.java))
         }
     }
 
@@ -57,5 +65,8 @@ class UserSignUpActivity : AppCompatActivity() {
         }
     }
 }
+
+
+
 
 

@@ -1,7 +1,5 @@
 package com.example.jobsportal
 
-
-
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -64,7 +62,7 @@ class AdminLoginActivity : AppCompatActivity() {
                         Log.d("AdminLogin", "No user found in Firestore.")
                     }
                 }.addOnFailureListener { e ->
-                    Toast.makeText(this, "Failed to fetch user role: ${e.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "You are not an admin: ${e.message}", Toast.LENGTH_SHORT).show()
                     Log.e("AdminLogin", "Firestore error: ", e)
                 }
             } else {
@@ -74,3 +72,4 @@ class AdminLoginActivity : AppCompatActivity() {
         }
     }
 }
+
